@@ -1,0 +1,19 @@
+from random import choice
+from random import randint
+
+sustantivo = ['Manzana',  'Perla', 'Libelula', 'Mariposa',  'Azucar', 'Flor', 'Frescura', 'Menta', 'Comida', 'Sandwich']
+
+adjetivo = ['Colorida', 'Gatuna', 'Saltarin', 'Salseante', 'Flameante', 'Dulce' ,'Brillante', 'Pomposa', 'Bonita', 'Simpatica']
+
+primer_digito = randint(0, 9)
+primer_digito = str(primer_digito)
+
+segundo_digito = randint(0, 9)
+segundo_digito = str(segundo_digito)
+
+primera_palabra = choice(sustantivo)
+segunda_palabra = choice(adjetivo)
+
+usuario = primera_palabra + segunda_palabra + primer_digito + segundo_digito
+
+print(usuario)
